@@ -8,14 +8,11 @@ Set your username and email — this links your commits to your GitHub account.
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email yourname@example.com
-```
 
 >
 > ```bash
 > git config --global user.email 123456789+username@users.noreply.github.com
-> ```
 
----
 
 ## 2. Set Default Branch & Pull Behavior
 
@@ -38,17 +35,12 @@ git config --get user.name
 git config --get user.email
 ```
 
----
 
-## 3. Create an SSH Key (for GitHub Authentication)
 
-### 3.1 Check for Existing Key
 
 ```bash
 ls ~/.ssh/id_ed25519.pub
-```
 
-If you see “No such file or directory”, continue to create one.
 
 ### 3.2 Generate a New SSH Key
 
@@ -77,19 +69,10 @@ Copy the full output — it starts with `ssh-ed25519` and ends with your usernam
 
 ---
 
-## 5. Test SSH Connection
 
-Run:
-
-```bash
 ssh -T git@github.com
 ```
 
-Expected output:
-
-```
-Hi username! You’ve successfully authenticated, but GitHub does not provide shell access.
-```
 
 
 
